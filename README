@@ -45,7 +45,8 @@ If you get the output, then you are good to go on to the next step:
 </html>
 
 5. Now to parse an actual website. This is where the fun begins. Go to the file - 
-google-news-query.py, save it on your computer, read the comments carefully and then
+https://github.com/raazgupta/Beautiful-Soup-Example/blob/master/google-news-query.py, 
+save it on your computer, read the comments carefully and then
 run it using python on your machine. Enjoy the results. And then realize that this is just the
 tip of the iceberg!
 
