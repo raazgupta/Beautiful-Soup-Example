@@ -1,0 +1,51 @@
+This file explains how to run Beautiful Soup and extract content from a website.
+
+Follow these steps until things go horribly wrong or you reach climax and a satisfactory 
+conclusion:
+
+1. First make sure that you have Python installed on your machine. 
+a. If you are using a Mac, you should already have it by default and all you need to do 
+is pull up the command prompt and type 'python'
+b. If you are using Windows, go here - http://www.python.org/download/ and follow 
+the instructions for setup. Once setup is complete, you will need to pull up a 
+command prompt from Start -> Run -> cmd. Then CD to the directory where Phython 
+is installed and type 'python'
+c. If you are using Linux, you should not be reading this file!
+
+2. After you type 'python' and you don't see some horrible error but something like:
+
+>>>
+Then type;
+
+>>> print "Hello World!"
+
+If the output is 'Hello World!' Then you are good to go to the next step. If not, you need
+to Google the shit out of any errors that are displayed. 
+
+3. Installing Beautiful Soup. Now we are getting close to having fun. You need to go to
+this website - http://www.crummy.com/software/BeautifulSoup/download/3.x/ and download
+BeautifulSoup-3.2.0.tar.gz. Unpack the file. In it you will find a file named 
+BeautifulSoup.py. Copy and paste it in your 'Python/Lib' folder. In my case, I copied and 
+pasted it in C:\Pythong27\Lib\. This will differ based on where your Python folder is located.
+
+4. Almost there! Now bring up that command prompt again and type 'python' then the following:
+>>> from BeautifulSoup import BeautifulSoup
+>>> import re
+>>> doc = ['<html><head><title>Page Title</title></head></html>']
+>>> soup = BeautifulSoup(''.join(doc))
+>>> print soup.prettify()
+
+If you get the output, then you are good to go on to the next step:
+<html>
+	<head>
+		<title>
+			Page Title
+		</title>
+	</head>
+</html>
+
+5. Now to parse an actual website. This is where the fun begins. Go to the file - 
+google-news-query.py, save it on your computer, read the comments carefully and then
+run it using python on your machine. Enjoy the results. And then realize that this is just the
+tip of the iceberg!
+
